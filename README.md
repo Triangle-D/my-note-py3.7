@@ -22,7 +22,7 @@ V0.1-1.0版本迭代仓库——https://github.com/Triangle-D/my-note <br>
   typing-extensions==3.7.4.3<br>
   Whoosh==2.7.4<br>
   wxPython==4.1.1<br>
-  zipp==3.4.1<br>
+  zipp==3.4.1<br><br>
 
 
 ##创建属于你的便签！
