@@ -1,0 +1,35 @@
+
+[2021-04-27 21:25:45] Traceback (most recent call last):
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\peewee.py", line 6884, in get
+    return clone.execute(database)[0]
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\peewee.py", line 4275, in __getitem__
+    return self.row_cache[item]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\views\header_panel.py", line 98, in _on_search_change
+    pub.sendMessage('note.list', notebook_id=self.notebook_id)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\pubsub\core\publisher.py", line 216, in sendMessage
+    topicObj.publish(**msgData)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\pubsub\core\topicobj.py", line 452, in publish
+    self.__sendMessage(msgData, topicObj, msgDataSubset)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\pubsub\core\topicobj.py", line 482, in __sendMessage
+    listener(data, self, allData)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\pubsub\core\listener.py", line 237, in __call__
+    cb(**kwargs)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\views\main_frame.py", line 253, in list_note
+    notebook = Notebook.find(notebook_id)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\models\base_model.py", line 32, in find
+    return cls.get_by_id(id)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\peewee.py", line 6449, in get_by_id
+    return cls.get(cls._meta.primary_key == pk)
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\peewee.py", line 6438, in get
+    return sq.get()
+  File "E:\1 学习资料\1 程序设计综合实验\my-note-py3.7\venv\lib\site-packages\peewee.py", line 6889, in get
+    (clone.model, sql, params))
+models.notebook.NotebookDoesNotExist: <Model: Notebook> instance matching query does not exist:
+SQL: SELECT "t1"."id", "t1"."created_at", "t1"."updated_at", "t1"."parent_id", "t1"."name", "t1"."description" FROM "notebooks" AS "t1" WHERE ("t1"."id" = ?) LIMIT ? OFFSET ?
+Params: [-1, 1, 0]
+
