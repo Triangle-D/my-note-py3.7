@@ -1,11 +1,11 @@
 # my-note-py3.7
 ##北邮程序设计实践
-V0.1-1.0版本迭代仓库 https://github.com/Triangle-D/my-note<br>
+V0.1-1.0版本[迭代仓库] (https://github.com/Triangle-D/my-note "悬停显示")<br>
 由于需要调用特定的库 但仅支持到Python 3.7版本 故重新搭建本仓库更新2.0版本<br>
 ##环境配置：
   WIN10<br>
   pycharm 2021.1<br>
-##安装库：
+##安装库：<br>
   appdirs==1.4.4<br>
   cefpython3==66.0<br>
   importlib-metadata==4.0.1<br>
