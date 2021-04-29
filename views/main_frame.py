@@ -18,7 +18,7 @@ import i18n
 
 class MainFrame(wx.Frame, MenuBarMixin):
     def __init__(self):
-        super().__init__(None, title=config.get("APP.window_title"), size=(800, 600))
+        super().__init__(None, title="My Note ❥(^_-)", size=(800, 600))
         self.aui_manager = aui.AuiManager(self,wx.aui.AUI_MGR_TRANSPARENT_HINT)
 
         self.nav_panel = NavPanel(self)

@@ -26,7 +26,7 @@ en:
     toggle_task_panel: "Toggle task panel"
     change_lang: "Language"
     english: "English"
-    chinese: "Chinese"
+    chinese: "中文"
   notebook:
     delete_dialog_title: "Are you sure to delete %{v1} ?"
     delete_dialog_message: "all notes inside this notebook will be deleted forever!"
