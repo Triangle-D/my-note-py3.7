@@ -48,7 +48,7 @@ def setup_db():
     notebook_count = cursor.execute("SELECT count(*) FROM notebooks").fetchone()[0]
     if not notebook_count:
         cursor.execute("insert into notebooks(name, description) values(?,?)", (
-            ("notebook.initial_name"), ("notebook.initial_desc")))
+            _("notebook.initial_name"), _("notebook.initial_desc")))
         conn.commit()
     conn.close()
 
